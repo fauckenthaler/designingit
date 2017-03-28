@@ -1,0 +1,102 @@
+.header {
+  background: #fff;
+  font-size: 14px;
+  position: relative;
+
+  &_top-inner,
+  &_bottom-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &_top-inner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @media (max-width: 424px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &_bottom {
+    background-color: #133b63;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (max-width: 991px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &_logo {
+    margin-right: 10px;
+    width: 250px;
+
+    @media (max-width: 991px) {
+      width: 210px;
+    }
+
+    @media (max-width: 767px) {
+      width: 170px;
+    }
+
+    @media (max-width: 424px) {
+      width: 140px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+  }
+
+  &_phone {
+    margin-top: 2px;
+    font-size: 16px;
+    margin-right: auto;
+  }
+
+  .header_cart {
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: stretch;
+    padding-right: 50px;
+    background-color: $brand-color-2;
+    transition: background-color 0.2s;
+
+    &:hover {
+      color: #fff;
+      background-color: darken($brand-color-2, 12%);
+    }
+
+    &:before {
+      position: relative;
+      top: -2px;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      width: 28px;
+      height: 23px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 118.9 97.5'%3E%3Cstyle%3E.st0,.st1%7Bfill:none;stroke:%23fff;stroke-width:6;stroke-miterlimit:10%7D.st1%7Bdisplay:none;stroke:%23000%7D%3C/style%3E%3Cpath id='XMLID_12_' class='st0' d='M0 3.2h24.4l17.4 69.1'/%3E%3Ccircle id='XMLID_13_' class='st0' cx='44.8' cy='82.2' r='11.6'/%3E%3Ccircle id='XMLID_15_' class='st0' cx='100.4' cy='82.2' r='11.6'/%3E%3Cpath id='XMLID_16_' class='st0' d='M55.8 78.4h33.6'/%3E%3Cpath id='XMLID_17_' class='st0' d='M38.7 60.2h61.7L114 16.8H27.8'/%3E%3Cpath id='XMLID_18_' class='st1' d='M70.9 60.2V16.8'/%3E%3Cpath id='XMLID_24_' class='st1' d='M85.7 60.2l6.8-43.4'/%3E%3Cpath id='XMLID_25_' class='st1' d='M55.8 60.2L49 16.8'/%3E%3C/svg%3E");
+      background-size: cover;
+    }
+
+    @media (max-width: 1199px) {
+      padding-right: 38px;
+    }
+
+    @media (max-width: 991px) {
+      margin-left: auto;
+      background-color: transparent;
+      margin-top: 10px;
+    }
+  }
+}

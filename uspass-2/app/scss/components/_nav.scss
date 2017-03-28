@@ -1,0 +1,93 @@
+.nav {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+
+  &-header {
+    @media (max-width: 991px) {
+      display: none;
+      position: absolute;
+      z-index: 999;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #133b63;
+      padding: 10px 15px 15px;
+    }
+
+    a {
+      margin-top: 18px;
+      margin-bottom: 16px;
+      display: inline-block;
+      margin-left: 45px;
+      padding-left: 45px;
+      transition: color 0.2s;
+      border-left: 1px solid #34689d;
+
+      &:hover {
+        color: $brand-color-2;
+      }
+
+      &:first-child {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+      }
+
+      @media (max-width: 1199px) {
+        margin-left: 28px;
+        padding-left: 28px;
+      }
+
+      @media (max-width: 991px) {
+        display: block;
+        width: auto;
+        font-size: 16px;
+        margin: 10px 0 0;
+        border-left: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &-footer {
+    align-items: flex-start;
+    flex: 1;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    a {
+      transition: color 0.2s;
+      text-transform: uppercase;
+      padding-right: 21px;
+      border-right: 1px solid #fff;
+      margin-right: 20px;
+      line-height: 0.9;
+      font-weight: 500;
+
+      &:last-child {
+        padding-right: 0;
+        border-right: 0;
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: darken(#fff, 20%);
+      }
+
+      @media (max-width: 767px) {
+        display: block;
+        margin-top: 12px;
+        padding-right: 0;
+        border-right: 0;
+        margin-right: 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

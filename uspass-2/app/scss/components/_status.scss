@@ -1,0 +1,96 @@
+.status {
+  position: relative;
+  margin-left: auto;
+
+  &_form {
+    padding: 28px 30px 22px;
+    background-color: #f5f4f4;
+    border-radius: $border-radius;
+    width: 550px;
+
+    @media (max-width: 991px) {
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      top: calc(100% + 5px);
+      right: 0;
+      box-shadow: 4px 4px 14px rgba(#000, 0.4);
+    }
+
+    @media (max-width: 600px) {
+      width: 390px;
+      padding: 20px 20px 20px;
+    }
+
+    @media (max-width: 424px) {
+      width: 290px;
+    }
+  }
+
+  &_btn {
+    display: none;
+
+    @media (max-width: 991px) {
+      display: inline-block;
+    }
+  }
+
+  &_header {
+    background: url('../img/calendar-sm.png') no-repeat left 2px;
+    padding-left: 35px;
+
+    @media (max-width: 767px) {
+      background-position: left 0;
+    }
+
+    h2 {
+      color: $brand-color;
+      font-size: 25px;
+      font-weight: 300;
+      margin-bottom: 0.5em;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &_controls {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+
+  &_control {
+    margin-right: 15px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 130px;
+      height: 36px;
+      padding: 0 15px;
+      border-radius: $border-radius;
+      border: 1px solid #dadada;
+      font-weight: 400;
+    }
+
+    label {
+      font-weight: 700;
+      margin-right: 10px;
+
+      @media (max-width: 600px) {
+        display: inline-block;
+        width: 55px;
+      }
+    }
+  }
+
+  .btn {
+  }
+}

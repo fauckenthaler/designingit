@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $brand-color;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border: none;
+  line-height: 1;
+  color: #fff;
+  border-radius: 18px;
+  text-align: center;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background: darken($brand-color, 5%);
+}
+
+  &-lg {
+    padding: 17px 50px 16px;
+    border-radius: 30px;
+
+    @media (max-width: 424px) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import 'variables';
+@import 'placeholders';
+
+@import 'bootstrap-grid';
+
+@import 'normalize';
+@import 'base';
+
+@import 'components/header';
+@import 'components/nav';
+@import 'components/hero';
+@import 'components/btn';
+@import 'components/departure-date';
+@import 'components/term-block';
+@import 'components/status';
+@import 'components/step';
+@import 'components/step-card';
+@import 'components/why';
+@import 'components/testimonials';
+@import 'components/testimonial';
+@import 'components/ready';
+@import 'components/footer';
+@import 'components/ic';
+@import 'components/menu-toggler';
+
+section {
+  padding: 100px 0;
+
+  @media (max-width: 991px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  header {
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 300;
+    }
+
+    img {
+      margin-top: 32px;
+    }
+  }
+}
+
+.arrow-up {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    transform: translateX(-50%);
+  }
+}

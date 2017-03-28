@@ -1,0 +1,105 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  background: url('../img/hero.jpg') no-repeat center bottom;
+  background-size: cover;
+  color: #fff;
+  padding-top: 110px;
+  padding-bottom: 55px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#000, 0.5);
+  }
+
+  &-sm {
+    padding-bottom: 45px;
+
+    @media (max-width: 991px) {
+      padding-top: 90px;
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 0.6em;
+    color: inherit;
+    font-weight: 500;
+
+    div {
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 34px;
+    }
+  }
+
+  &-sm h1:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+
+  .btn {
+    margin-bottom: 0.5em;
+  }
+
+  &_price {
+    font-size: 13px;
+    margin-left: 39px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 3em;
+    }
+  }
+
+  &_terms {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 991px) {
+      margin-top: 50px;
+      display: inline-block;
+    }
+  }
+
+  &_terms-vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 8px;
+
+    @media (max-width: 991px) {
+      margin: 10px auto;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.step-card {
+  display: block;
+  padding: 30px;
+  background-color: #f5f4f4;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: $border-radius;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    padding: 25px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.7em;
+    font-size: 25px;
+    color: $brand-color;
+    font-weight: 300;
+
+    @media (max-width: 991px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+
+    &:before {
+      position: relative;
+      top: -3px;
+      margin-right: 11px;
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      background: url('../img/calendar-sm.png') no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+
+      @media (max-width: 767px) {
+        top: -4px;
+      }
+    }
+  }
+
+  &_price {
+    font-size: 17px;
+    text-align: center;
+    color: #707e8e;
+
+    div {
+      font-size: 45px;
+      line-height: 1;
+      font-weight: 500;
+      color: $brand-color;
+    }
+  }
+}

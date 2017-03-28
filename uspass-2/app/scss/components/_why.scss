@@ -1,0 +1,36 @@
+.why {
+  background-color: #ebf7fd;
+  font-size: 18px;
+
+  @media (max-width: 424px) {
+    font-size: 16px;
+  }
+
+  ul {
+    @extend %clearlist;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 40px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        @media (max-width: 991px) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  &_img {
+    min-width: 64px;
+    text-align: center;
+    margin-right: 25px;
+  }
+}
